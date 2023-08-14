@@ -1,17 +1,15 @@
 
-import { useEffect, useState } from 'react'
+
 
 // components
-import SmoothieCard from '../components/SmoothieCard'
+import TaskCard from '../components/TaskCard/SmoothieCard'
 
 
 const Home = () => {
- 
-
 
   return (
     <div className="page home">
-      <SmoothieCard></SmoothieCard>
+      <TaskCard></TaskCard>
     </div>
   )
 }

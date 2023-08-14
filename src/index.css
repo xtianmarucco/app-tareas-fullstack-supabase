@@ -42,11 +42,12 @@ nav h1 {
 }
 .smoothie-card {
   width: 100%;
-  padding: 10px;
+  padding: 15px;
   background: #fff;
   box-sizing: border-box;
   border-radius: 6px;
   position: relative;
+  margin: 10px;
 }
 .smoothie-card .rating {
   position: absolute;
