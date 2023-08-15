@@ -1,12 +1,11 @@
-import AddTask from '../components/AddTask/AddTask'
+import CreateTask from '../components/AddTask/CreateTask';
 
 
 
 const Create = () => {
   return (
-    <div className="page create">
-      <h2>Create</h2>
-      <AddTask></AddTask>
+    <div className="">
+      <CreateTask></CreateTask>
     </div>
   )
 }
