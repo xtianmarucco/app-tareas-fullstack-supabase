@@ -1,6 +1,10 @@
 import useFetch from "./useFetch";
+import DeleteTask from "../DeleteTask/DeleteTask";
+
+
 const TaskCard = () => {
-  const { tasks } = useFetch();
+  const { tasks, deleteTask } = useFetch();
+  
   console.log(tasks)
 
   return (
@@ -18,6 +22,7 @@ const TaskCard = () => {
           <p className="text-black-700 text-base">{task.status}</p>
 
           <strong>{task.assigned_to}</strong>
+          <div><DeleteTask taskId={task.id} onDelete={() => deleteTask(task.id)} /></div>
         </div>
       ))}
     </>
